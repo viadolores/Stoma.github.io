@@ -1,0 +1,35 @@
+.button {
+    font-family: inherit;
+    padding: 0;
+    border: 1px solid transparent;
+    cursor: pointer;
+    background: none;
+}
+
+.button_theme {
+    &_transparent {
+        border-color: var(--accent-color);
+        color: var(--accent-color);
+    }
+
+    &_accent {
+        border-color: var(--accent-color);
+        background-color: var(--accent-color);
+        color: var(--color-light);
+    }
+
+    &_warning {
+        border-color: var(--color-warning);
+        background-color: var(--color-warning);
+        color: var(--color-light);
+    }
+}
+
+.button_size {
+    &_md {
+        height: 50px;
+        border-radius: 30px;
+        padding: 4px 40px;
+        font-size: 18px;
+    }
+}

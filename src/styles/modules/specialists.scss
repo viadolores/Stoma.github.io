@@ -1,0 +1,88 @@
+.specialists {
+
+    &__slider-container {
+        @include wrapper;
+    }
+
+    &__row {
+        @include row-flex();
+        justify-content: center;
+    }
+
+    &__swiper-wrapper {
+        @include col();
+        @include size(12);
+        margin-bottom: 115px;
+    }
+
+    &__swiper {
+        border-radius: 50px;
+        overflow: hidden;
+    }
+
+    &__slide {
+        height: 413px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__picture {
+        border-radius: 50px;
+    }
+
+    &__slider {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__title {
+        color: var(--accent-color);
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0px;
+
+        padding-bottom: 30px;
+    }
+
+    &__description {
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin: 0px;
+    }
+
+    &__inner {
+        margin-top: 70px;
+        margin-bottom: 100px;
+    }
+
+}
+
+.specialists-slider {
+
+    position: relative;
+
+    &__button-next {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: calc(100% + 32px);
+        transform: translateY(-50%);
+        cursor: pointer;
+
+    }
+
+    &__button-prev {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        right: calc(100% + 32px);
+        transform: translateY(-50%);
+        cursor: pointer;
+
+    }
+}

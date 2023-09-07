@@ -1,0 +1,65 @@
+.default-slider {
+
+    position: relative;
+
+    &__slider {
+        overflow: hidden;
+        position: relative;
+    }
+
+    &__button-next {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        left: calc(100% + 32px);
+        transform: translateY(-50%);
+        cursor: pointer;
+
+    }
+
+    &__button-prev {
+        position: absolute;
+        z-index: 2;
+        top: 50%;
+        right: calc(100% + 32px);
+        transform: translateY(-50%);
+        cursor: pointer;
+
+    }
+
+
+    // &__button-next {
+    //     color: var(--accent-color);
+    //     position: relative;
+    //     position: relative;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     color: var(--accent-color);
+    //     aspect-ratio: 1;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     transition: .3s;
+    //     cursor: pointer;
+    // }
+
+    // &__button-prev {
+    //     color: var(--accent-color);
+    //     position: relative;
+    //     position: relative;
+    //     top: 0;
+    //     left: 0;
+    //     right: 0;
+    //     bottom: 0;
+    //     color: var(--accent-color);
+    //     aspect-ratio: 1;
+    //     display: flex;
+    //     align-items: center;
+    //     justify-content: center;
+    //     transition: .3s;
+    //     cursor: pointer;
+    // }
+
+}

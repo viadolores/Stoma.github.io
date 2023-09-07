@@ -1,0 +1,54 @@
+.footer {
+
+    &__container {
+        box-shadow: 2px 3px 29px 0px rgba(229, 229, 229, 0.20);
+    }
+
+    &__info {
+        padding-left: 80px;
+        padding-top: 83px;
+    }
+
+    &__map {
+        display: flex;
+    }
+
+    &__description {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0px;
+        padding-bottom: 30px;
+        padding-left: 20px;
+    }
+
+    &__info-inner {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    &__description-link {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+        margin: 0px;
+        padding-top: 37px;
+        padding-bottom: 45px;
+    }
+
+    &__icon {
+        display: flex;
+    }
+
+    &__phone-number {
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+}

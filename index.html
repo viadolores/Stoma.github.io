@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">.
+    <title>Webpack App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,300;1,500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo-wrapper">
+                <img src="./images/logo.png" alt="Website logo" class="header__logo">
+                <p class="header__logo-description">Качественное <br /> лечение зубов</p>
+            </div>
+            <div class="header__details">
+                <div class="contact-info header__detail">
+                    <img class="contact-info__icon" src="./icons/location.svg" alt="" width="35" height="35">
+                    <div class="contact-info__description">
+                        г. Нур-Султан, ул. Сыганак, д.18/3
+                    </div>
+                </div>
+                <div class="contact-info header__detail">
+                    <img class="contact-info__icon" src="./icons/clock.svg" alt="" width="35" height="35">
+                    <div class="contact-info__description">
+                        пн-ср 9:00-20:00 <br /> чт-вс 9:00-19:00
+                    </div>
+                </div>
+                <div class="contact-info header__detail">
+                    <img class="contact-info__icon" src="./icons/phone.svg" alt="" width="35" height="35">
+                    <div class="contact-info__description">
+                        <a class="link" href="tel:+77752345678">+7 (775) 234 56 78</a> <br />
+                        <a class="link" href="tel:+77052345678">+7 (705) 234 56 78</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="main-nav">
+        <div class="main-nav__inner">
+            <ul class="main-nav__list">
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#">о нас</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#">наши услуги</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#">видеогалерея</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#">наша команда</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#">отзывы</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#">наши достижения</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#">контакты</a></li>
+            </ul>
+            <div>
+                <button class="main-nav__request-button button button_theme_transparent button_size_md">Оставить
+                    заявку</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="top-slider">
+        <div class="swiper container_fluid top-slider__slider-container">
+            <div class="swiper-wrapper">
+                <div class="top-slider__slide swiper-slide"
+                    style="background-image: url(/public/images/smile-image.jpg)">
+                    <div class="top-slider__slide-inner">
+                        <h1 class="top-slider__title">улыбайся <br /><strong>уверенно</strong></h1>
+                        <p class="top-slider__description"> Используй промокод <strong>hollywood</strong> и получай
+                            скидку 10% на все услуги </p>
+                        <button class="top-slider__button button button_theme_warning button_size_md">Оставить
+                            заявку</button>
+                    </div>
+                </div>
+                <div class="top-slider__slide swiper-slide"
+                    style="background-image: url(/public/images/smile-image.jpg)">
+                    <div class="top-slider__slide-inner">
+                        <h1 class="top-slider__title">улыбайся <br /><strong>уверенно</strong></h1>
+                        <p class="top-slider__description"> Используй промокод <strong>hollywood</strong> и получай
+                            скидку 10% на все услуги </p>
+                        <button class="top-slider__button button button_theme_warning button_size_md">Оставить
+                            заявку</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="top-slider__navigation-wrapper">
+                <div class="relative">
+
+                    <div class="top-slider__navigation">
+                        <div class="top-slider__prev">
+                            <img class="top-slider__navigation-button" src="/public/icons/arrow-top.svg" alt="next">
+                        </div>
+                        <!-- If we need pagination -->
+                        <div class="top-slider__pagination"></div>
+                        <div class="top-slider__next">
+                            <img class="top-slider__navigation-button" src="/public/icons/arrow-bottom.svg" alt="next">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="services">
+        <div class="services__container">
+
+            <h1 class="services__title title">наши <strong>услуги</strong></h1>
+            <div class="services__inner">
+                <div class="services__list-wrapper">
+
+                    <div class="services__list">
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <img class="services__item-img" src="./public/icons/servises-1.svg" alt="">
+                                <h2 class="services__item-title">Терапия</h2>
+                            </div>
+                            <p class="services__item-description">Художественная реставрация зубов призвана не просто
+                                вернуть человеку прежнюю
+                                привлекательность
+                                улыбки, но
+                                и подарить ему улыбку его мечты.</p>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <img class="services__item-img" src="./public/icons/servises-2.svg" alt="">
+                                <h2 class="services__item-title">Ортодонтия</h2>
+                            </div>
+                            <p class="services__item-description">Начать ортодонтическое лечение никогда не поздно.
+                                Исправить нарушение прикуса можно как
+                                ребенку,
+                                так
+                                и
+                                взрослому.</p>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <img class="services__item-img" src="./public/icons/servises-3.svg" alt="">
+                                <h2 class="services__item-title">Пародонтология</h2>
+                            </div>
+                            <p class="services__item-description">Причина воспаления десен — микробный зубной налет,
+                                который при плохой гигиене дает основу
+                                для
+                                образования
+                                наддесневого зубного камня. </p>
+                        </div>
+                        <div class="services__item">
+                            <div class="services__item-header">
+                                <img class="services__item-img" src="./public/icons/servises-4.svg" alt="">
+                                <h2 class="services__item-title">Хирургия</h2>
+                            </div>
+                            <p class="services__item-description">Выполнение данного оперативного вмешательства на
+                                высоком техническом уровне обеспечивает
+                                долгосрочный
+                                хороший результат, позволяя сохранить зуб, и сопровождается минимальным дискомфортом для
+                                пациента.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services__picture-col">
+                    <img class="services__img" src="./public/images/servises-picture.jpg" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="consultation">
+        <div class="consultation__container">
+            <h1 class="consultation__item-inner title">Первичная консультация врача <strong>бесплатно!</strong>
+            </h1>
+            <div class="consultation__inner">
+                <div class="consultation__img-col">
+                    <img class="consultation__picture" src="public/images/consultation-picture.jpg" alt="">
+                </div>
+                <div class="consultation__info-col">
+                    <p class="consultation__description">Запишитесь на прием и получите бесплатную консультацию, а также
+                        пошаговый план своего лечения
+                        после
+                        осмотра
+                        доктора.
+                        Многолетний опыт врача помогает проводить осмотр безболезненно и легко.</p>
+                    <button style="padding: 4px 80px;"
+                        class="button button_theme_accent button_size_md ">Записаться</button>
+                    <img class="consultation__info-col-picture" src="public/images/consultation-tooth.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="indication-list">
+        <div class="indication-list__container">
+            <div>
+                <h1 class=" indication-list__title title"><strong>Наша работа</strong> в числах</h1>
+            </div>
+            <div class="indication-list__row">
+                <div class="indication-list__col">
+                    <span class="indication-list__circle">11</span>
+                    <p class="indication-list__description">лет работы</p>
+                </div>
+
+                <div class="indication-list__col">
+                    <span class="indication-list__circle">3</span>
+                    <p class="indication-list__description">города</p>
+                </div>
+
+                <div class="indication-list__col">
+                    <span class="indication-list__circle">7849</span>
+                    <p class="indication-list__description">счастливых <br> улыбок</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="video-info">
+        <div class="video-info__slider-container">
+            <div class="video-info__inner">
+                <h1 class="video-info__title">Узнайте о нас больше в <strong>видеогалерее</strong></h1>
+                <p class="video-info__description">Познакомимся с врачами, осмотрим клинику, узнаем ответы <br> на часто
+                    задаваемые вопросы</p>
+            </div>
+            <div class="video-info__row">
+                <div class="default-slider video-info__swiper-wrapper">
+                    <div class="default-slider__slider video-info__swiper">
+                        <div class="swiper-wrapper default-slider__slider-wrapper">
+                            <div class="swiper-slide video-info__slide">
+                                <img src="/public/images/video-info.jpg" alt="" class="video-info__picture">
+                            </div>
+                            <div class="swiper-slide video-info__slide">
+                                <img src="/public/images/video-info.jpg" alt="" class="video-info__picture">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="default-slider__button-prev">
+                        <img class="default-slider__navigation-button" src="/public/icons/arrow-left.svg" alt="next">
+                    </div>
+                    <div class="default-slider__button-next">
+                        <img class="default-slider__navigation-button" src="/public/icons/arrow-right.svg" alt="next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="specialists">
+        <div class="specialists__slider-container">
+            <div class="specialists__inner">
+                <h1 class="specialists__title"><strong>наши врачи</strong></h1>
+                <p class="specialists__description">Профессиональные специалисты, влюбленные в свое дело</p>
+            </div>
+            <div class="specialists__row">
+                <div class="default-slider specialists__swiper-wrapper">
+                    <div class="specialists__slider specialists__swiper">
+                        <div class="swiper-wrapper specialists__slider-wrapper">
+                            <div class="swiper-slide specialists__slide">
+                                <img src="/public/images/specialist-1.jpg" alt="" class="specialists__picture">
+                                <img src="/public/images/specialist-2.jpg" alt="" class="specialists__picture">
+                                <img src="/public/images/specialist-3.jpg" alt="" class="specialists__picture">
+                            </div>
+                            <div class="swiper-slide specialists__slide">
+                                <img src="/public/images/specialist-1.jpg" alt="" class="specialists__picture">
+                                <img src="/public/images/specialist-2.jpg" alt="" class="specialists__picture">
+                                <img src="/public/images/specialist-3.jpg" alt="" class="specialists__picture">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="specialists-slider__button-prev">
+                        <img src="/public/icons/arrow-left.svg" alt="next">
+                    </div>
+                    <div class="specialists-slider__button-next">
+                        <img src="/public/icons/arrow-right.svg" alt="next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="placeholder-list">
+        <div class="container_fluid">
+            <div class="placeholder-list__container">
+                <div class="placeholder-list__inner">
+                    <div class="placeholder-list__info-title">
+                        <h1 class="placeholder-list__title">оставьте заявку</h1>
+                        <p class="placeholder-list__title-description">Запишитесь на прием в одну <br>из наших клиник
+                            “Smile”
+                        </p>
+                    </div>
+                    <div class="placeholder-list__entry-form">
+                        <div class="placeholder-list__name">
+                            <p class="placeholder-list__description"><input class="placeholder-list__input" type="text"
+                                    placeholder="Имя, Фамилия"></p>
+                        </div>
+                        <div class="placeholder-list__phone-number">
+                            <p class="placeholder-list__description"><input class="placeholder-list__input" type="text"
+                                    placeholder="Номер телефона"></p>
+                        </div>
+                        <div class="placeholder-list__email">
+                            <p class="placeholder-list__description"><input class="placeholder-list__input" type="text"
+                                    placeholder="Ваш e-mail"></p>
+                        </div>
+                        <div class="placeholder-list__choice-of-service">
+                            <p class="placeholder-list__description"><input class="placeholder-list__input" type="text"
+                                    placeholder="Выберите услугу из списка"></p>
+                        </div>
+                        <div class="placeholder-list__button">
+                            <button class="button button_theme_warning button_size_md">Записаться</button>
+                        </div>
+                    </div>
+                    <div class="placeholder-list__picture">
+                        <img src="/public/images/placeholder-picture.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="feedback">
+        <div class="feedback__slider-container">
+            <div class="feedback__inner">
+                <h1 class="feedback__title"><strong>отзывы</strong> о нас</h1>
+                <p class="feedback__description">Узнайте, что о нас говорят и пишут</p>
+            </div>
+            <div class="feedback__row">
+                <div class="default-slider feedback__swiper-wrapper">
+                    <div class="feedback__slider feedback__swiper">
+                        <div class="swiper-wrapper feedback__slider-wrapper">
+                            <div class="swiper-slide feedback__slide">
+                                <div class="feedback__slide-inner">
+                                    <img src="./public/images/feedback-picture.jpg" alt="" class="feedback__picture">
+                                    <h2 class="feedback__title-inner">Камила Ким</h2>
+                                    <p class="feedback__description-inner"><img class="feedback__icon"
+                                            src="./public/icons/feedback-icon.svg" alt="">@kamilakim</p>
+                                </div>
+                                <div class="feedback__info">
+                                    <p>Хочу поблагодарить врачей клиники Smile за профессиональный
+                                        подход в вопросе моего
+                                        лечения. Я очень довольна. Все было легко и безболезненно.</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide feedback__slide">
+                                <div class="feedback__slide-inner">
+                                    <img src="./public/images/feedback-picture.jpg" alt="" class="feedback__picture">
+                                    <h2 class="feedback__title-inner">Камила Ким</h2>
+                                    <p class="feedback__description-inner"><img class="feedback__icon"
+                                            src="./public/icons/feedback-icon.svg" alt="">@kamilakim</p>
+                                </div>
+                                <div class="feedback__info">
+                                    <p>Хочу поблагодарить врачей клиники Smile за профессиональный
+                                        подход в вопросе моего
+                                        лечения. Я очень довольна. Все было легко и безболезненно.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feedback-slider__button-prev">
+                        <img src="/public/icons/arrow-left.svg" alt="next">
+                    </div>
+                    <div class="feedback-slider__button-next">
+                        <img src="/public/icons/arrow-right.svg" alt="next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="achievements">
+        <div class="achievements__slider-container">
+            <div class="achievements__inner">
+                <h1 class="achievements__title"><strong>наши достижения</strong></h1>
+                <p class="achievements__description">Сертификаты врачей и письма благодораности</p>
+            </div>
+            <div class="achievements__row">
+                <div class="default-slider achievements__swiper-wrapper">
+                    <div class="achievements__slider achievements__swiper">
+                        <div class="swiper-wrapper achievements__slider-wrapper">
+                            <div class="swiper-slide achievements__slide">
+                                <img src="/public/images/achievements-picture-1.jpg" alt=""
+                                    class="achievements__picture">
+                                <img src="/public/images/achievements-picture-2.jpg" alt=""
+                                    class="achievements__picture">
+                                <img src="/public/images/achievements-picture-3.jpg" alt=""
+                                    class="achievements__picture">
+                            </div>
+                            <div class="swiper-slide achievements__slide">
+                                <img src="/public/images/achievements-picture-1.jpg" alt=""
+                                    class="achievements__picture">
+                                <img src="/public/images/achievements-picture-2.jpg" alt=""
+                                    class="achievements__picture">
+                                <img src="/public/images/achievements-picture-3.jpg" alt=""
+                                    class="achievements__picture">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achievements-slider__button-prev">
+                        <img src="/public/icons/arrow-left.svg" alt="next">
+                    </div>
+                    <div class="achievements-slider__button-next">
+                        <img src="/public/icons/arrow-right.svg" alt="next">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mailing">
+        <div class="mailing__container">
+            <div class="mailing__title">
+                <h1 class="mailing__title-inner"><strong>каждый месяц</strong> в наших клинике новая акция,<br>
+                    подпишитесь
+                    на новости, чтобы
+                    не пропустить обновления. </h1>
+            </div>
+            <div class="mailing__info">
+                <p class="mailing__description"><input class="mailing__input" type="text" placeholder="E-mail"></p>
+                <button class="mailing__button button button_theme_transparent">Получать
+                    новости</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__map" style="position:relative;overflow:hidden;"><a
+                    href="https://yandex.kz/maps/163/astana/?utm_medium=mapframe&utm_source=maps"
+                    style="color:#eee;font-size:12px;position:absolute;top:0px;">Астана</a><a
+                    href="https://yandex.kz/maps/163/astana/house/Y0gYdQ9gQUAGQFtrfX1zeH1nZA==/?ll=71.380851%2C51.129140&utm_medium=mapframe&utm_source=maps&z=16.71"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Сыганак, 18 —
+                    Яндекс Карты</a><iframe
+                    src="https://yandex.kz/map-widget/v1/?ll=71.380851%2C51.129140&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgo0MzU3ODQyOTY2EkHSmtCw0LfQsNKb0YHRgtCw0L0sINCQ0YHRgtCw0L3QsCwg0KHRi9KT0LDQvdCw0psg0LrTqdGI0LXRgdGWLCAxOCIKDf_CjkIVPYRMQg%2C%2C&z=16.71"
+                    width="50%" height="640" style="border: none;" allowfullscreen="true"
+                    style="position:relative;"></iframe>
+                <div class="footer__info">
+                    <div class="footer__info-inner">
+                        <img src="./public/icons/location.svg" alt="">
+                        <p class="footer__description">г. Нур-Султан,<br> ул. Сыганак, д.18/3</p>
+                    </div>
+                    <div class="footer__info-inner">
+                        <img src="./public/icons/clock.svg" alt="">
+                        <p class="footer__description">пн-ср 9:00-20:00<br> чт-вс 9:00-19:00</p>
+                    </div>
+                    <div class="footer__info-inner">
+                        <img src="./public/icons/phone.svg" alt="">
+                        <div class="footer__phone-number" style="padding-left: 20px;">
+                            <a class="link" href="tel:+77752345678">+7 (775) 234 56 78</a><br>
+                            <a class="link" href="tel:+77052345678">+7 (705) 234 56 78</a>
+                        </div>
+                    </div>
+                    <div>
+                        <p class="footer__description-link">Мы в соцсетях</p>
+                    </div>
+                    <div class="footer__icon">
+                        <img style="padding-right: 13px;" src="./public/icons/footer-inst.svg" alt="">
+                        <img style="padding-left: 13px;" src="./public/icons/footer-vk.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

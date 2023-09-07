@@ -1,0 +1,38 @@
+.main-nav {
+    // display:flex;
+    align-items: center;
+    padding-top: 39px;
+    padding-bottom: 27px;
+
+    &__inner {
+        @include wrapper();
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__list {
+        display: contents;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    &__list-item {
+        display: inline;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: rgba(73, 80, 89, 1);
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    &__request-button {
+        flex-shrink: 0;
+    }
+}

@@ -1,0 +1,63 @@
+.consultation {
+    overflow: hidden;
+
+    &__inner {
+        @include row-flex();
+        min-width: 1320px;
+
+    }
+
+    &__container {
+        @include wrapper();
+    }
+
+    &__info-col {
+        @include col();
+        @include size(6);
+        // padding-top: 143px;
+        padding-left: 69px;
+        padding-top: 77px;
+        padding-right: 57px;
+        border-radius: 50px;
+        background: #FFF;
+        /* 1 */
+        box-shadow: 2px 3px 29px 0px rgba(229, 229, 229, 0.20);
+        position: inherit;
+        margin-top: 66px;
+        margin-bottom: 66px;
+
+    }
+
+    &__img-col {
+        @include col();
+        @include size(6);
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__picture {
+        border-radius: 50px;
+
+    }
+
+    &__description {
+        min-height: 273px;
+        margin: 0px;
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-bottom: 35px;
+    }
+
+    &__item-inner {
+        margin: 0px;
+        margin-top: 57px;
+        margin-bottom: 101px;
+    }
+
+    &__info-col-picture {
+        position: absolute;
+
+    }
+}
