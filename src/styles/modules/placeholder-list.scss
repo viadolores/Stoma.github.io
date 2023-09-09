@@ -1,5 +1,5 @@
 .placeholder-list {
-
+    overflow: hidden;
     background-color: var(--color-grey);
     padding-top: 85px;
     padding-bottom: 85px;
@@ -87,6 +87,7 @@
         position: relative;
         bottom: 76px;
         left: 85px;
+        padding-right: auto;
     }
 
 }

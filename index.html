@@ -48,16 +48,20 @@
         <div class="main-nav__inner">
             <ul class="main-nav__list">
                 <li class="main-nav__list-item"><a class="main-nav__link" href="#">о нас</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="#">наши услуги</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="#">видеогалерея</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="#">наша команда</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="#">отзывы</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="#">наши достижения</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__link" href="#">контакты</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#servises-section">наши услуги</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#video-info-section">видеогалерея</a>
+                </li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#specialists-section">наша команда</a>
+                </li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#feedback-section">отзывы</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#achievements-section">наши
+                        достижения</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__link" href="#footer-section">контакты</a></li>
             </ul>
             <div>
-                <button class="main-nav__request-button button button_theme_transparent button_size_md">Оставить
-                    заявку</button>
+                <button class="main-nav__request-button button button_theme_transparent button_size_md"><a
+                        href="#placeholder-list-section">Оставить
+                        заявку</a></button>
             </div>
         </div>
     </nav>
@@ -106,7 +110,7 @@
         </div>
     </div>
 
-    <section class="services">
+    <section class="services" id="servises-section">
         <div class="services__container">
 
             <h1 class="services__title title">наши <strong>услуги</strong></h1>
@@ -185,8 +189,8 @@
                         осмотра
                         доктора.
                         Многолетний опыт врача помогает проводить осмотр безболезненно и легко.</p>
-                    <button style="padding: 4px 80px;"
-                        class="button button_theme_accent button_size_md ">Записаться</button>
+                    <button data-micromodal-trigger="modal-1" style="padding: 4px 80px;"
+                        class="button button_theme_accent button_size_md">Записаться</button>
                     <img class="consultation__info-col-picture" src="public/images/consultation-tooth.png" alt="">
                 </div>
             </div>
@@ -218,7 +222,7 @@
         </div>
     </section>
 
-    <section class="video-info">
+    <section class="video-info" id="video-info-section">
         <div class="video-info__slider-container">
             <div class="video-info__inner">
                 <h1 class="video-info__title">Узнайте о нас больше в <strong>видеогалерее</strong></h1>
@@ -248,7 +252,7 @@
         </div>
     </section>
 
-    <section class="specialists">
+    <section class="specialists" id="specialists-section">
         <div class="specialists__slider-container">
             <div class="specialists__inner">
                 <h1 class="specialists__title"><strong>наши врачи</strong></h1>
@@ -281,7 +285,7 @@
         </div>
     </section>
 
-    <section class="placeholder-list">
+    <section class="placeholder-list" id="placeholder-list-section">
         <div class="container_fluid">
             <div class="placeholder-list__container">
                 <div class="placeholder-list__inner">
@@ -320,7 +324,7 @@
         </div>
     </section>
 
-    <section class="feedback">
+    <section class="feedback" id="feedback-section">
         <div class="feedback__slider-container">
             <div class="feedback__inner">
                 <h1 class="feedback__title"><strong>отзывы</strong> о нас</h1>
@@ -369,7 +373,7 @@
         </div>
     </section>
 
-    <section class="achievements">
+    <section class="achievements" id="achievements-section">
         <div class="achievements__slider-container">
             <div class="achievements__inner">
                 <h1 class="achievements__title"><strong>наши достижения</strong></h1>
@@ -424,7 +428,7 @@
         </div>
     </section>
 
-    <footer class="footer">
+    <footer class="footer" id="footer-section">
         <div class="footer__container">
             <div class="footer__map" style="position:relative;overflow:hidden;"><a
                     href="https://yandex.kz/maps/163/astana/?utm_medium=mapframe&utm_source=maps"
@@ -462,6 +466,92 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <img src="./public/icons/button-close.svg" alt="">
+                    </button>
+                    <h2 class="modal__title" id="modal-1-title"><strong>отличные
+                            новости!</strong>
+                    </h2>
+                    <p class="modal__description">Сегодня открыта запись <br><strong>со скидкой
+                            10%</strong>
+                    </p>
+                </header>
+                <main class="modal__content" id="modal-1-content">
+                    <form id="form" class="input-list" id="modal-1-content">
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="Камила"></p>
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="E-mail"></p>
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="Номер телефона"></p>
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="Текст сообщения"></p>
+                    </form>
+
+                    <div class="placeholder-modal__info">
+                        <img src="./public/icons/modul-icon.svg" alt="">
+                        <p class="placeholder-modal__info-description">Нажимая на кнопку, Вы соглашаетесь<br> на
+                            обработку
+                            персональных данных</p>
+                    </div>
+
+
+                </main>
+                <footer class="modal__footer">
+                    <button data-micromodal-trigger="modal-fail"
+                        class="placeholder-modal__footer-button">Записаться</button>
+                </footer>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <div class="modal micromodal-slide" id="modal-fail" aria-hidden="true">
+        <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+            <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-fail-title">
+                <header class="modal__header">
+                    <button class="modal__close" aria-label="Close modal" data-micromodal-close>
+                        <img src="./public/icons/button-close.svg" alt="">
+                    </button>
+                    <h2 class="modal__title" id="modal-fail-title"><strong>title]</strong>
+                    </h2>
+                    <p class="modal__description">Сегодня открыта запись <br><strong>со скидкой
+                            10%</strong>
+                    </p>
+                </header>
+                <main class="modal__content" id="modal-fail-content">
+                    <form id="form" class="input-list" id="modal-fail-content">
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="Камила"></p>
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="E-mail"></p>
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="Номер телефона"></p>
+                        <p class="input-list__description"><input class="input-list__inner" type="text"
+                                placeholder="Текст сообщения"></p>
+                    </form>
+
+                    <div class="placeholder-modal__info">
+                        <img src="./public/icons/modul-icon.svg" alt="">
+                        <p class="placeholder-modal__info-description">Нажимая на кнопку, Вы соглашаетесь<br> на
+                            обработку
+                            персональных данных</p>
+                    </div>
+
+
+                </main>
+                <footer class="modal__footer">
+                    <button type="submit" form="form" class="placeholder-modal__footer-button">Записаться</button>
+                </footer>
+            </div>
+        </div>
+    </div> -->
+
 </body>
 
 </html>

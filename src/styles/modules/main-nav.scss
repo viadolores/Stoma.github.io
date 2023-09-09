@@ -35,4 +35,9 @@
     &__request-button {
         flex-shrink: 0;
     }
+
+    &__request-button a {
+        color: var(--accent-color);
+        text-decoration: none;
+    }
 }
